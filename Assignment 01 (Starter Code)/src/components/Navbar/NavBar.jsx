@@ -8,6 +8,7 @@ import dataNavBar from '../../data/navBar.json';
 
 function NavBar() {
   return (
+    
     <div className="navbar-content">
       <div className="head-content">
         <h2 className="website-title">Booking Website</h2>

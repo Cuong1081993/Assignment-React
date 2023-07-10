@@ -1,6 +1,10 @@
 import React from "react";
 import './Header.css';
 function Header() {
+
+  const handleSearch = () => {
+    window.location.replace("/search");
+  };
   return (
     <div className="header-content">
       <div className="content">
@@ -14,7 +18,7 @@ function Header() {
 
       <div className="search-form">
         <input type="search" className="search-input" />
-        <button className="search-button">Search</button>
+        <button className="search-button" onClick={handleSearch}>Search</button>
       </div>
     </div>
   );

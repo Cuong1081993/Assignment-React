@@ -5,7 +5,6 @@ import Type from "../../components/Type/Type";
 import Hotel from "../../components/Hotel/Hotel";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import Footer from "../../components/Footer/Footer";
-
 const Home = () => {
   return (
     <div className="home">
@@ -16,12 +15,9 @@ const Home = () => {
         <City />
         <Type />
         <Hotel />
-       
       </div>
       <Subscribe />
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 };

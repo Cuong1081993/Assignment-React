@@ -2,6 +2,7 @@
 .category-items {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
 .category-item{
@@ -9,9 +10,10 @@
 }
 
 .category-image img {
-    width: 300px;
+    width: 197px;
     height: 160px;
-    border-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .category-item h6{
     font-size: 13px;
