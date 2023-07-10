@@ -2,17 +2,15 @@
 .category-items {
     display: flex;
     flex-direction: row;
-    gap: 12px;
 }
 
 .category-item{
-    width: 150px;
-
+    width: 310px;
 }
 
 .category-image img {
-    width: 150px;
-    height: 125px;
+    width: 300px;
+    height: 160px;
     border-radius: 15px;
 }
 .category-item h6{

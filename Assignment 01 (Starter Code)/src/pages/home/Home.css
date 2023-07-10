@@ -1,4 +1,8 @@
 .body-content{
+   
+    padding-top: 4rem;
+    
+    min-width: 1024px;
     margin-top: 40px;
 }
 body{

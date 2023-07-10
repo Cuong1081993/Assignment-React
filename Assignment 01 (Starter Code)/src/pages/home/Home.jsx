@@ -16,8 +16,9 @@ const Home = () => {
         <City />
         <Type />
         <Hotel />
-        <Subscribe />
+       
       </div>
+      <Subscribe />
       <footer>
         <Footer />
       </footer>
