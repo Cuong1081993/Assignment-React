@@ -9,6 +9,8 @@ function Type() {
       <h3 style={{margin: '25px 0'}}>Browse by property type</h3>
       <div className="category-items">
         {dataType.map((item, index) => {
+          // lay ra cac phan tu trong file type.json 
+          // dung ham map render 
           return (
             <div key={index} className="category-item">
               <div className="category-image">

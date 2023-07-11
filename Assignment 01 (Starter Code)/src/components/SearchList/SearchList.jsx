@@ -29,7 +29,7 @@ const SearchList = () => {
               <p className="price">${item.price}</p>
             </section>
             <section>
-              <p>
+              <div>
                 {item.free_cancel === true ? (
                   <div>
                     <section className="title-2">
@@ -39,15 +39,15 @@ const SearchList = () => {
                     <section className="title-3">
                       <p>
                         You can cancel later, so lock in this great price today
+                        <button className="btn-see">See availability</button>
                       </p>
                     </section>
                   </div>
                 ) : (
-                  ""
+                  <button className="btn-see">See availability</button>
                 )}
-              </p>
+              </div>
             </section>
-            <button className="btn-see">See availability</button>
           </div>
         </div>
       ))}

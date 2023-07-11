@@ -7,7 +7,8 @@ import LocalStyles from './components/localCss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <LocalStyles/>
+    <LocalStyles>
     <App />
+    </LocalStyles>
   </React.StrictMode>
 );

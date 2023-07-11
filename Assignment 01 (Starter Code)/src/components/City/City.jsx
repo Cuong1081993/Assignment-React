@@ -1,26 +1,11 @@
 import React from "react";
 import "./City.css";
+import dataCity from '../../data/city.json'
 function City() {
-  const cities = [
-    {
-      name: "Dublin",
-      subText: "123 properties",
-      image: "./images/city_1.webp",
-    },
-    {
-      name: "Reno",
-      subText: "533 properties",
-      image: "./images/city_2.webp",
-    },
-    {
-      name: "Austin",
-      subText: "532 properties",
-      image: "./images/city_3.webp",
-    },
-  ];
+ 
   return (
     <div className="city-items">
-      {cities.map((item, index) => {
+      {dataCity.map((item, index) => {
         return (
           <div key={index} className="city-item">
             <div

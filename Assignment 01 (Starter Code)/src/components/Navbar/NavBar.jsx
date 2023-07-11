@@ -20,6 +20,8 @@ function NavBar() {
       <div className="items">
         <ul>
           {dataNavBar.map((item, index) => {
+            // lay du lieu tu file json
+            // neu gia tri item.active = true thi nhan du lieu true
               return (
                 <li key={index} className={item.active ? 'active' : ''}>
                   <i className={`fa ${item.icon}`} />
