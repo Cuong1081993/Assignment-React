@@ -1,0 +1,10 @@
+.FilmsLoading,
+.FilmsError {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.app{
+  background-color: black;
+  padding: 20px;
+}
