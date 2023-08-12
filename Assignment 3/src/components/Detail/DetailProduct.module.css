@@ -1,0 +1,125 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 0;
+}
+.left_img {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.left_img_list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.left_img_list img {
+  width: 50%;
+}
+.img_main {
+  width: 100%;
+  object-fit: cover;
+}
+
+.right_container {
+  margin-left: 20px;
+}
+.right_container p:first-child {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.right_container p:nth-child(2) {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+.right_container p:nth-child(3) {
+  line-height: 1.6rem;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+}
+.quantity span:first-child {
+  margin-right: 40px;
+  opacity: 0.5;
+}
+.quantity span:nth-child(2) {
+  opacity: 0.5;
+  padding: 0 4px;
+}
+.quantity_container {
+  display: flex;
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+  align-items: center;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+.btn_add,
+.btn_remove {
+  border: none;
+  padding: 4px 10px;
+  margin: 0 5px;
+}
+.btn_add:hover,
+.btn_remove:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  opacity: 0.8;
+}
+.btn_submit {
+  text-align: center;
+  padding: 10px 40px;
+  border: none;
+  background-color: #000;
+  color: white;
+  margin-left: 5px;
+}
+.btn_submit:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.descrip {
+  padding: 10px 30px;
+  background-color: #000;
+  color: white;
+  text-transform: uppercase;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.img_related {
+  width: 200px;
+  text-align: center;
+}
+.pro_descrip{
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.related img {
+  width: 300px;
+}
+.description{
+    display: flex;
+    flex-wrap: wrap;
+}
+.related{
+    width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.img_related p:first-child{
+    margin-top:20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.img_related p:nth-child(2){
+opacity: 0.8;
+font-size: 1.2rem;
+}
