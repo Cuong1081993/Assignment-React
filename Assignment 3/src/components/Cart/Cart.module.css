@@ -1,0 +1,104 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    align-items: center;
+    background-color: #ccc;
+    margin-bottom: 25px;
+  }
+  .banner p:first-child {
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 10px;
+  }
+  .banner p:nth-child(2) {
+    opacity: 0.6;
+    font-size: 1.2rem;
+  }
+  .title_content{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+  }
+.cart {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 30px;
+}
+.cart_total {
+  padding: 25px;
+  margin-top: 1rem;
+  height: 280px;
+  background-color: #f8f9fa;
+}
+.cart_total p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sub_total,
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.sub_total {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.total {
+  margin-bottom: 20px;
+}
+.sub_total span:nth-child(2) {
+  font-weight: 500;
+  opacity: 0.7;
+}
+.total span:nth-child(2) {
+  font-size: 20px;
+  font-style: italic;
+}
+.cart_total input {
+  width: 100%;
+  height: 40px;
+  padding-left: 5px;
+}
+.cart_total button {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  border: none;
+  height: 40px;
+}
+.cart_total button:hover {
+  opacity: 0.8;
+}
+.cart_total button span {
+  margin-left: 7px;
+}
+
+.move_page {
+  display: flex;
+  justify-content: space-between;
+  margin:0 0 50px 0;
+  background-color: #f8f9fa;
+}
+.move_page p a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 17px;
+}
+.move_page p:nth-child(2):hover {
+  background-color: #ccc;
+}
+.move_page p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+.move_page p:nth-child(2) {
+  padding: 10px 20px;
+  border: 1px solid #000;
+}

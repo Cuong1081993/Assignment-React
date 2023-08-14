@@ -16,6 +16,7 @@ const Produclist = () => {
     setType(item.label);
 
     // reset default value when search and filter end.
+    
     setValue("");
     setPriceFilter("");
   };

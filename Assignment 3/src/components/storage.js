@@ -18,6 +18,7 @@ export function saveToStorage(key, value) {
   return localStorage.setItem(key, JSON.stringify(value));
 }
 
+//delete data from
 // convert Js Object to class instance of user class
 
 function parseUser(userData) {

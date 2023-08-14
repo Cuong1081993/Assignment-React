@@ -2,3 +2,10 @@
     opacity: 0.5;
     margin-right: 3px;
 }
+.badge{
+    margin-left: 5px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+}

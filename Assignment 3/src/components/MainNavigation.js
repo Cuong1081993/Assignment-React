@@ -1,4 +1,4 @@
-import { NavLink, useNavigation } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 import CartButton from "./Cart/CartButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,7 +6,7 @@ import { faCaretDown, faUser } from "@fortawesome/free-solid-svg-icons";
 import { getFromStorage, saveToStorage } from "./storage";
 
 const MainNavigation = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigate();
 
   const confirmLogoutHandler = () => {
     window.confirm("Are you sure to log out ?");

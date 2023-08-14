@@ -1,0 +1,42 @@
+
+.cart_left {
+  display: grid;
+  grid-template-columns: repeat(6, 1.1fr);
+  column-gap: 5px;
+  text-align: center;
+ 
+  margin-top: 100px;
+  font-size:15px
+}
+.cart_left img {
+  width: 100%;
+}
+
+.cart_left p {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+.btn_add,
+.btn_remove {
+  padding: 0 5px;
+}
+.btn_add :hover,
+.btn_remove :hover {
+    background-color: #ccc;
+    opacity: 0.5;
+    scale: 1.1;
+}
+.icon_trash:hover{
+    background-color: #ccc;
+    scale: 1.1;
+    cursor: pointer;
+}
+table thead  th{
+  background-color: #f8f9fa !important;
+}
+table thead  th p{ 
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-style: italic;
+  font-weight: 600;
+}

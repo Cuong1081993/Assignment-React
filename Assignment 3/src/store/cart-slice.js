@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getFromStorage } from "../components/storage";
 
 const cartSliceReducers = createSlice({
   name: "cart",
   initialState: {
-    listCart: [],
+    listCart: getFromStorage("PRODUCT_ARRAY") ?? [],
     totalQuantity: 0,
     changed: false,
   },
@@ -35,17 +36,28 @@ const cartSliceReducers = createSlice({
       state.changed = true;
       if (existingItem.quantity === 1) {
         state.listCart = state.listCart.filter((item) => item.id !== id);
+        state.listCart = state.listCart.filter(
+          (cart) => cart.id !== action.payload
+        );
+        localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(state.listCart));
         state.totalQuantity--;
       } else {
         existingItem.quantity--;
         existingItem.totalPrice = existingItem.totalPrice - existingItem.price;
       }
     },
-    DELETE_CART(state,action){
-        const idItemRemove = action.payload;
-        state.listCart = state.listCart.filter((item)=>item.id !== idItemRemove);
-        state.totalQuantity--;
-    }
+    DELETE_CART(state, action) {
+      state.listCart = state.listCart.filter(
+        (cart) => cart.id !== action.payload
+      );
+      localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(state.listCart));
+
+      const idItemRemove = action.payload;
+      state.listCart = state.listCart.filter(
+        (item) => item.id !== idItemRemove
+      );
+      state.totalQuantity--;
+    },
   },
 });
 
