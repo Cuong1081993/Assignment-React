@@ -38,7 +38,7 @@ const CartItem = (props) => {
       <tr className="text-center" key={item.id}>
         <td className="pl-0 border-0">
           <div className=" align-items-center justify-content-center">
-            <img src={item.img} alt="..." width="70" />
+            <img src={item.img1} alt="..." width="70" />
           </div>
         </td>
         <td className="align-middle border-0">

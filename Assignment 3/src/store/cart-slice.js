@@ -20,7 +20,7 @@ const cartSliceReducers = createSlice({
           id: newItem.id,
           name: newItem.name,
           price: newItem.price,
-          img: newItem.img1,
+          img1: newItem.img1,
           quantity: newItem.quantity,
           totalPrice: newItem.price * newItem.quantity,
         });
@@ -58,6 +58,16 @@ const cartSliceReducers = createSlice({
       );
       state.totalQuantity--;
     },
+    LOAD_TOTAL_QUANTITY(state, action) {
+      let totalQuantity = state.listCart.length;
+      
+      state.totalQuantity = totalQuantity;
+    },
+    SET_TOTAL_QUANTITY(state, action) {
+      let totalQuantity = action.payload.quantity;
+      
+      state.totalQuantity = totalQuantity;
+    }
   },
 });
 

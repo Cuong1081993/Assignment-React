@@ -8,17 +8,7 @@ import { getFromStorage, saveToStorage } from "../storage";
 import { cartAction } from "../../store/cart-slice";
 
 const DetailProduct = () => {
-  useEffect(() => {
-    const fetchApiProduct = async () => {
-      const response = await fetch(
-        "https://firebasestorage.googleapis.com/v0/b/funix-subtitle.appspot.com/o/Boutique_products.json?alt=media&token=dc67a5ea-e3e0-479e-9eaf-5e01bcd09c74"
-      );
-      let data = await response.json(response);
-      setData(data);
-    };
-    fetchApiProduct();
-  }, []);
-
+  
   const [quantity, setQuantity] = useState(1);
   const params = useParams();
   const dispatch = useDispatch();
@@ -27,11 +17,14 @@ const DetailProduct = () => {
 
   const idProduct = params.productId;
   const detail = data.filter((item) => item._id.$oid === idProduct);
+
+
   const relatedProduct = data.filter(
     (item) => item.category === detail[0].category
   );
 
   const addItemHandler = (item) => {
+   
     dispatch(
       cartAction.ADD_CART({
         id: item._id.$oid,
@@ -69,6 +62,17 @@ const DetailProduct = () => {
       return setQuantity(1);
     }
   };
+
+  useEffect(() => {
+    const fetchApiProduct = async () => {
+      const response = await fetch(
+        "https://firebasestorage.googleapis.com/v0/b/funix-subtitle.appspot.com/o/Boutique_products.json?alt=media&token=dc67a5ea-e3e0-479e-9eaf-5e01bcd09c74"
+      );
+      let data = await response.json(response);
+      setData(data);
+    };
+    fetchApiProduct();
+  }, [data]);
 
   return (
     <>

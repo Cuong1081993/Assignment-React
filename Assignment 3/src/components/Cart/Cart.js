@@ -64,7 +64,7 @@ const Cart = () => {
                   key={item.id}
                   item={{
                     id: item.id,
-                    img: item.img,
+                    img1: item.img1,
                     name: item.name,
                     totalPrice: item.totalPrice,
                     price: item.price,
